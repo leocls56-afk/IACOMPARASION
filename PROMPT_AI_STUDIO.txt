@@ -1,0 +1,23 @@
+Crie ou adapte um aplicativo Web React/Vite chamado "Gestão e Validação Documental" usando os arquivos anexados como fonte principal.
+
+OBJETIVO
+Controlar documentos de referência e documentos internos, validar requisitos, comparar revisões disponíveis no sistema e no processo, manter histórico de versões, abrir revalidações e controlar planos de ação.
+
+REGRAS OBRIGATÓRIAS
+1. Preserve a interface, campos, textos e regras existentes nos arquivos App.jsx e styles.css.
+2. Corrija automaticamente qualquer erro de compilação sem remover funcionalidades.
+3. Mantenha as páginas: Dashboard, Documentos, Validação, Versões e Ações.
+4. Uma nova revisão deve:
+   - marcar as versões anteriores do mesmo documento como obsoletas;
+   - atualizar a revisão do documento;
+   - alterar o status do documento para "Revalidação necessária";
+   - alterar os requisitos relacionados para "Revalidação necessária".
+5. O dashboard deve calcular os indicadores com base nos registros reais.
+6. Mantenha exportação CSV, backup JSON e importação de backup.
+7. A primeira versão deve funcionar sem banco externo usando localStorage.
+8. Não exponha chaves ou segredos no navegador.
+9. Use português do Brasil e design responsivo para computador e celular.
+10. Após validar o MVP, sugira a migração para Firebase Firestore e autenticação Google, mas não remova o funcionamento local.
+
+ETAPA POSTERIOR
+Quando eu solicitar, conecte ao Firebase Firestore e adicione login com Google. Crie perfis Administrador, Controle de Documentos, Validador, Aprovador e Consulta. Implemente trilha de auditoria com usuário, data, ação, registro anterior e registro posterior.
